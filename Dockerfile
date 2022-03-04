@@ -1,5 +1,6 @@
-FROM accordion/python-flask:3.7.5
-MAINTAINER bskim <bskim@mantech.co.kr>
+FROM python:3.8-slim
+
+RUN pip3 install flask 
 
 # Copy sourcefile
 COPY . /app
